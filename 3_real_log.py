@@ -67,8 +67,7 @@ def update_plot(frame):
 
     if frequency_scale == 'log':
         # Exclude zero and negative frequencies from fft_magnitude to match the length of `positive_frequencies`
-        fft_magnitude = ff
-        t_magnitude[frequencies > 0]
+        fft_magnitude = fft_magnitude[frequencies > 0]
 
     # Apply logarithmic transformation for amplitude if needed
     if amplitude_scale == 'log':
