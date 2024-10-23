@@ -29,7 +29,7 @@ plt.grid(True)
 plt.show(block=False)  # Non-blocking plot
 
 # Save sine wave to a WAV file
-write("sine_wave.wav", sampling_rate, np.int16(sine_wave * 32767))
+write('sine_wave.wav', sampling_rate, np.int16(sine_wave * 32767))
 
 # Calculate FFT
 fft_values = fft(sine_wave)
