@@ -3,10 +3,13 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.io.wavfile import write
 from scipy.fft import fft, fftfreq
+import sys
+
+# np.set_printoptions(threshold=sys.maxsize)
 
 # Parameters
 duration  = 10  # seconds
-frequency = 3440  # A4 note, 440 Hz!1
+frequency = 340  # A4 note, 440 Hz!1
 sampling_rate = 48000  # Standard CD-quality sampling rate
 
 # Generate time array
